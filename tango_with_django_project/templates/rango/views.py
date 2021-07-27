@@ -5,11 +5,10 @@ from django.http import HttpResponse
 
 
 def about(request):
-    return render(request, 'about.html', {})
+    return render(request, './rango/about.html', {})
     # return HttpResponse("<html>Rango says here is the about page.</br><a href='/rango/'>Index</a></html>")
 
 
 def index(request):
-    context = {}
-    return render(request, 'index.html', context)
-    # return HttpResponse("<html>Rango says hey there partner!</br><a href='/rango/about/'>About</a></html>")
+    context_dict = {'message': 'Crunchy, creamy, cookie, candy, cupcake!'}
+    return render(request, './rango/index.html', context=context_dict)
