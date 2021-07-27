@@ -5,7 +5,8 @@ from django.http import HttpResponse
 
 
 def about(request):
-    return render(request, './rango/about.html', {})
+    context_dict = {'boldmessage': 'Crunchy, creamy, cookie, candy, cupcake!'}
+    return render(request, './rango/about.html', context=context_dict)
     # return HttpResponse("<html>Rango says here is the about page.</br><a href='/rango/'>Index</a></html>")
 
 
