@@ -1,13 +1,12 @@
-from templates.rango.models import Category, Page
-import django
+#!/usr/bin/env python
 import os
-
-os.environ.setdefault('DJANGO_SETTINGS_MODULE',
-                      'tango_with_django_project.settings')
-
-# initialise django settings
+import django
+os.environ.setdefault("DJANGO_SETTINGS_MODULE",
+                      "tango_with_django_project.settings")
 django.setup()
 
+# This could only be called after seting up
+from templates.rango.models import Category, Page
 
 def populate():
     # First, we will create lists of dictionaries containing the pages
