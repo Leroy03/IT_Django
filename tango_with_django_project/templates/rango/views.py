@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 from django.http import HttpResponse
-from templates.rango.models import Category
+from templates.rango.models import Category,Page
 # Create your views here.
 
 
@@ -28,3 +28,8 @@ def index(request):
     context_dict['categories'] = category_list
     # Render the response and send it back!
     return render(request, 'rango/index.html', context=context_dict)
+
+
+
+def show_category(request,category_name_slug):
+    pass
