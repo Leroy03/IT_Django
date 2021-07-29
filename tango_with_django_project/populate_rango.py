@@ -6,7 +6,7 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE",
 django.setup()
 
 # This could only be called after seting up
-from templates.rango.models import Category, Page
+from rango.models import Category, Page
 
 def populate():
     # First, we will create lists of dictionaries containing the pages
