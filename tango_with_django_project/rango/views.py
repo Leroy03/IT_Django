@@ -1,6 +1,6 @@
 from django.shortcuts import redirect, render
-from templates.rango.models import Category, Page
-from templates.rango.forms import CategoryForm, PageForm
+from rango.models import Category, Page
+from rango.forms import CategoryForm, PageForm
 from django.urls import reverse
 # Create your views here.
 

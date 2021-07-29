@@ -2,7 +2,7 @@ from django.contrib import admin
 
 # Register your models here.
 
-from templates.rango.models import Category, Page
+from rango.models import Category, Page
 
 
 class PageAdmin(admin.ModelAdmin):

@@ -1,5 +1,5 @@
 from django.urls import path
-from templates.rango import views
+from rango import views
 app_name = 'rango'
 
 urlpatterns = [
