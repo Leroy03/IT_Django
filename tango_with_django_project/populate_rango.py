@@ -73,8 +73,8 @@ def add_page(cat, title, url, views=0):
 
 def add_cat(name,likes,views):
     c = Category.objects.get_or_create(name=name)[0]
-    c.views = views+1
-    c.likes=likes+1
+    c.views = views
+    c.likes=likes
     c.save()
     return c
 
